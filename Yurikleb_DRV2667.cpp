@@ -68,9 +68,8 @@ void Yurikleb_DRV2667::setToAnalogInput(){
   Serial.println("Switching to Analog Input Mode");
   //control
   writeRegisterBytes(0x02, 0x00); //Take device out of standby mode
-  writeRegisterBytes(0x01, 0x07); //Set to analog input + Gain 0-3 (0x04-0x07 25v-100v)
   writeRegisterBytes(0x02, 0x02); //Set EN_OVERRIDE bit = boost and amplifier active
-
+  writeRegisterBytes(0x01, 0x07); //Set to analog input + Gain 0-3 (0x04-0x07 25v-100v)
 
 }
 

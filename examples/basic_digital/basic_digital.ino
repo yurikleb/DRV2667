@@ -9,7 +9,7 @@ Yurikleb_DRV2667 drv;
 // Amplitude    --  min:0=50v max: 255=100v 
 // Frequerncy   --  0-255 or 0x00-0xFF
 // Duration     --  Cycles 0-255
-// Envelope     --  (Ramp up + down)
+// Envelope     --  (Ramp up + down. See page 20 in the datasheet: https://www.ti.com/lit/ds/symlink/drv2667.pdf)
 // Max 60 waves per array !!
 
 byte WaveForm_1[4][4] = { 
